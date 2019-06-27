@@ -21,7 +21,7 @@ If not using composer you must also include this library: [Doctrine/Annotations]
 
 ## Get Methods by Annotation
 
-The get methods by annotation allow you to retrieve the class methods that implement the a particular annotation and particular parameters.
+The get methods by annotation allow you to retrieve the class methods that implement a particular annotation and particular parameters.
 
 ### Example using the AsMethod annotation
 
