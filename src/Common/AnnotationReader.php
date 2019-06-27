@@ -20,7 +20,7 @@ final class AnnotationReader extends Reader
         $reflectionClass = new \ReflectionClass($class);
         $methods = $reflectionClass->getMethods();
 
-        return array_filter($methods, function ($method) use ($parameters, $annotation) {
+        $myMethods = array_filter($methods, function ($method) use ($parameters, $annotation) {
             $myAnnotation = $this->getMethodAnnotation($method, $annotation);
 
             if (is_null($myAnnotation)) {
@@ -31,5 +31,7 @@ final class AnnotationReader extends Reader
 
             return count($myParameters) > 0;
         }, ARRAY_FILTER_USE_BOTH);
+
+        return array_values($myMethods);
     }
 }

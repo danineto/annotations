@@ -2,12 +2,6 @@
     "name": "danineto/annotations",
     "description": "Annotations are a mechanism for adding metadata information to source code.",
     "type": "library",
-    "require": {
-        "doctrine/annotations": "^1.6"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^8.2"
-    },
     "license": "MIT",
     "authors": [
         {
@@ -15,6 +9,13 @@
             "email": "daniel.neto89@gmail.com"
         }
     ],
+    "require": {
+        "php": ">=7.2",
+        "doctrine/annotations": "^1.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.2"
+    },
     "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
