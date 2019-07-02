@@ -3,6 +3,10 @@
     "description": "Annotations are a mechanism for adding metadata information to source code.",
     "type": "library",
     "license": "MIT",
+    "support": {
+        "source": "https://github.com/danineto/annotations",
+        "issues": "https://github.com/danineto/annotations/issues"
+    },
     "authors": [
         {
             "name": "Daniel Neto",
@@ -16,7 +20,6 @@
     "require-dev": {
         "phpunit/phpunit": "^8.2"
     },
-    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
             "Danineto\\Annotations\\": "src/"
@@ -29,5 +32,6 @@
         "classmap": [
             "tests/"
         ]
-    }
+    },
+    "minimum-stability": "stable",
 }
